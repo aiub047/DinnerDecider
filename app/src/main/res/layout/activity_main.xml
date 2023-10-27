@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceBlue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/blueJay"
+        android:gravity="center_vertical"
+        android:text="@string/strDinnerDecider"
+        android:textColor="@color/platinum"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/foodImage"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="42dp"
+        android:background="@color/aliceBlue"
+        android:contentDescription="@string/strHamburgerTitle"
+        android:src="@drawable/dd_logo" />
+
+    <TextView
+        android:id="@+id/foodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/strHamburger"
+        android:textColor="@color/darkGray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtFoodEntry"
+        android:layout_width="233dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/foodTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="82dp"
+        android:autofillHints="@string/strAddNewFood"
+        android:backgroundTint="@color/gray"
+        android:hint="@string/strAddNewFood"
+        android:inputType=""
+        android:padding="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addFoodButton"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFoodEntry"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/blueJay"
+        android:gravity="center"
+        android:onClick="addFood"
+        android:text="@string/strAddFood"
+        android:textColor="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/decideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/blueJay"
+        android:gravity="center"
+        android:onClick="funDecide"
+        android:text="@string/strDecide"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

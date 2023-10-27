@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dinner App</string>
+    <string name="strClick">Click</string>
+    <string name="strWelcome">Welcome</string>
+    <string name="strAddFood">ADD FOOD</string>
+    <string name="strDecide">DECIDE!</string>
+    <string name="strAddNewFood">Add new food...</string>
+    <string name="strHamburger">Hamburger</string>
+    <string name="strDinnerDecider">DinnerDecider</string>
+    <string name="strHamburgerTitle">Hamburger Image</string>
+</resources>
