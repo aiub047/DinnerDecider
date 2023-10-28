@@ -1,1 +1,3 @@
 # DinnerDecider
+Assignment 2
+----------------------
